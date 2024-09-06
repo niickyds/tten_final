@@ -1,0 +1,35 @@
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 80px;
+  padding: 15px;
+  height: 100px;
+  font-family: "Roboto", Arial, sans-serif;
+}
+
+.header__logo {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.header__logo-image {
+  width: 70px;
+  height: 70px;
+}
+
+.header__search {
+  width: 200px;
+}
+
+.header__search-input {
+  border-radius: 30px;
+  height: 40px;
+  padding-left: 15px;
+}
+
+/* .header__title {
+  font-size: 40px;
+  margin-left: 12px;
+} */
