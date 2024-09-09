@@ -5,11 +5,16 @@ function Header() {
   return (
     <header className="header">
       <div className="header__logo">
-        <img className="header__logo-image" src={logo} />
+        <button>
+          <img className="header__logo-image" src={logo} />
+        </button>
         <h1>Pokemon Team Creator</h1>
       </div>
       <div className="header__search">
-        <input className="header__search-input" placeholder="Search" />
+        <input
+          className="header__search-input"
+          placeholder="Search for a Pokemon"
+        />
       </div>
     </header>
   );

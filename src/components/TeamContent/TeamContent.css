@@ -1,0 +1,42 @@
+.landing {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 80px;
+  padding-left: 15px;
+  padding-right: 15px;
+  height: 100px;
+  font-family: "Roboto", Arial, sans-serif;
+}
+
+.landing__team-section {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.landing__team-title {
+  padding: 8px;
+}
+
+.landing__team {
+  display: flex;
+  justify-content: space-between;
+  padding: 4px;
+}
+
+.landing__card {
+  display: flex;
+  flex-direction: column;
+}
+
+.landing__card-image {
+  width: 75px;
+  height: 75px;
+}
+
+.pokedex_button {
+  box-sizing: border-box;
+  width: 120px;
+}

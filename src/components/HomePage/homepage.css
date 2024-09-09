@@ -1,0 +1,8 @@
+.homepage {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  font-style: normal;
+  /* font-weight: 700; */
+  gap: 20px;
+}

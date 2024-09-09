@@ -11,7 +11,7 @@
 .header__logo {
   display: flex;
   align-items: center;
-  gap: 5px;
+  gap: 20px;
 }
 
 .header__logo-image {
