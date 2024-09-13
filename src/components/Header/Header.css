@@ -3,9 +3,9 @@
   justify-content: center;
   align-items: center;
   gap: 80px;
-  padding: 15px;
+  padding: 16px;
+  padding-bottom: 30px;
   height: 100px;
-  font-family: "Roboto", Arial, sans-serif;
 }
 
 .header__logo {
@@ -26,8 +26,25 @@
 .header__search-input {
   border-radius: 30px;
   height: 40px;
-  padding-left: 15px;
+  padding-left: 16px;
+  /* border-width: 1px;
+  border-color: #cfcfcf;
+  border-style: solid; */
+  border: 1px solid #cfcfcf;
 }
+
+.header__search-input:focus {
+  border: 1px solid #2f71e5;
+  outline: none;
+}
+
+.header__search-input:focus::placeholder {
+  color: black;
+}
+
+/* .header__search-input {
+  border: 1px solid black;
+} */
 
 /* .header__title {
   font-size: 40px;
