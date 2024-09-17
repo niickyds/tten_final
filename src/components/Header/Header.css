@@ -19,6 +19,17 @@
   height: 70px;
 }
 
+.header__button {
+  border: none;
+  background-color: transparent;
+}
+
+.header__button:hover {
+  cursor: pointer;
+  border-radius: 50%;
+  background-color: #cfcfcf;
+}
+
 .header__search {
   width: 200px;
 }
