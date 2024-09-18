@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import InfoPage from "../InfoPage/InfoPage";
 import "./TeamContent.css";
 import logo from "../../assets/logo.png";
 
@@ -7,9 +8,7 @@ function TeamContent() {
     <div className="landing">
       <div className="landing__info">
         <h3 className="landing__title">Pokemon Final</h3>
-        <Link to="/">
-          <img className="landing__logo" src={logo} />
-        </Link>
+        <img className="landing__logo" src={logo} />
         <div className="landing__directions">
           Click one of the buttons below
         </div>

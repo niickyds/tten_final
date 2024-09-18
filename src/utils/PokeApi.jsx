@@ -7,8 +7,8 @@ export const processServerResponse = (res) => {
   return Promise.reject(`Error: ${res.status}`);
 };
 
-const pokemonName = document.getElementById("pokemonName").value;
+// const pokemonName = document.getElementById("pokemonName").value;
 
-export function searchPokemon() {
+export default function searchPokemon() {
   return fetch(`${baseUrl}/${pokemonName}`).then(processServerResponse);
 }

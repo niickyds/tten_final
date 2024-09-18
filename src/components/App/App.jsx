@@ -3,16 +3,17 @@ import { useState } from "react";
 import Header from "../Header/Header";
 import TeamContent from "../TeamContent/TeamContent";
 import InfoPage from "../InfoPage/InfoPage";
+import AboutPage from "../About/About";
 import "./App.css";
 
 function App() {
   return (
     <>
       <div className="page">
-        <TeamContent />
         <Routes>
           <Route path="/" element={<TeamContent />} />
           <Route path="/info" element={<InfoPage />} />
+          <Route path="/about" element={<AboutPage />} />
         </Routes>
       </div>
     </>

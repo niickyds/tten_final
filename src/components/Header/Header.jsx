@@ -1,20 +1,21 @@
 import { Link } from "react-router-dom";
 import "./Header.css";
 import logo from "../../assets/logo.png";
+import searchPokemon from "../../utils/PokeApi";
 
-function Header() {
+function Header({ searchPokemon }) {
   return (
     <header className="header">
       <div className="header__logo">
-        <Link className="header__button">
-          <img to="/" className="header__logo-image" src={logo} />
+        <Link to="/" className="header__button">
+          <img className="header__logo-image" src={logo} />
         </Link>
-        <h1>Pokemon Team Creator</h1>
+        <h1>Search for a Pokemon!</h1>
       </div>
       <div className="header__search">
         <input
           className="header__search-input"
-          placeholder="Search for a Pokemon"
+          placeholder="ex. Charizard"
           id="pokemonName"
         />
       </div>
