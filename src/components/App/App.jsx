@@ -1,6 +1,5 @@
 import { Route, Routes } from "react-router-dom";
 import { useState } from "react";
-import Header from "../Header/Header";
 import TeamContent from "../TeamContent/TeamContent";
 import InfoPage from "../InfoPage/InfoPage";
 import AboutPage from "../About/About";
