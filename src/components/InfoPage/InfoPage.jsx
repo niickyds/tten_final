@@ -1,13 +1,21 @@
 import { Link } from "react-router-dom";
 import Header from "../Header/Header";
+import Footer from "../Footer/Footer";
 import logo from "../../assets/logo.png";
 import "./InfoPage.css";
+import { fetchPokemon } from "../../utils/PokeApi";
 
 function InfoPage() {
   const pokeInfo = Header();
+
+  const getPokemon = async (query) => {
+    const res = await fetchPokemon(query);
+    console.log(res);
+  };
+
   return (
     <div>
-      <Header />
+      <Header getPokemon={getPokemon} />
       <div className="info">
         <div className="card">
           <img className="card__image" src={logo} />
@@ -62,9 +70,8 @@ function InfoPage() {
           </div>
         </div>
       </div>
-      <h1>
-        <Link to="/">Home</Link>
-      </h1>
+
+      <Footer />
     </div>
   );
 }
