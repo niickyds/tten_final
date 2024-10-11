@@ -7,8 +7,8 @@ import "./Header.css";
 
 function Header(props) {
   const [loading, setLoading] = useState([]);
-  const [pokemonName, setPokemonName] = useState();
-  const [search, setSearch] = useState("");
+  // const [pokemonName, setPokemonName] = useState();
+  // const [search, setSearch] = useState("");
   const [pokeInfo, setPokeInfo] = useState({
     img: "",
     name: "",
@@ -63,11 +63,15 @@ function Header(props) {
       </div>
       <div className="header__search">
         <input
+          type="text"
           className="header__search-input"
           placeholder="ex. Charizard"
           id="pokemonName"
-          onSubmit={(evt) => props.getPokemon(search)}
+          // onKeyDown={handleEnter()}
         />
+        <button className="header__search-button" onClick={fetchPokemon}>
+          Search
+        </button>
       </div>
     </header>
   );

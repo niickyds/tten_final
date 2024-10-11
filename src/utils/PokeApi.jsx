@@ -1,17 +1,23 @@
-export const baseUrl = "https://pokeapi.co/api/v2";
+export const baseUrl = "https://pokeapi.co/api/v2/pokemon";
 
 const query = {
   pokemon: "pokemon",
 };
 
-export async function fetchPokemon(pokemon) {
-  console.log(`${baseurl}/${query.pokemon}/${pokemon}`);
-  return fetch(`${baseurl}/${query.pokemon}/${pokemon}`);
-}
+export async function fetchPokemon() {
+  try {
+    const pokemonName = document
+      .getElementById("pokemonName")
+      .value.toLowerCase();
+    const response = await fetch(`${baseUrl}/${pokemonName}`);
 
-export const processServerResponse = (res) => {
-  if (res.ok) {
-    return res.json();
+    if (!response.ok) {
+      throw new Error("Could not find resource");
+    }
+
+    const data = await response.json();
+    console.log(data);
+  } catch (err) {
+    console.error(err);
   }
-  return Promise.reject(`Error: ${res.status}`);
-};
+}

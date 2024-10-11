@@ -32,6 +32,8 @@
 
 .header__search {
   width: 200px;
+  display: flex;
+  gap: 8px;
 }
 
 .header__search-input {
@@ -51,6 +53,26 @@
 
 .header__search-input:focus::placeholder {
   color: black;
+}
+
+.header__search-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  font-size: 14px;
+  color: white;
+  /* width: 200px; */
+  border-radius: 50px;
+  border: none;
+  background: #2f71e5;
+  transition: background-color 0.1s linear 0.1s;
+  box-shadow: 0 10px 10px #0e1a3933;
+  cursor: pointer;
+}
+
+.header__search-button:hover {
+  background: #0255e5;
 }
 
 /* .header__search-input {

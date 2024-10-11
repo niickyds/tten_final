@@ -1,4 +1,6 @@
 import { Link } from "react-router-dom";
+import { useState } from "react";
+
 import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
 import logo from "../../assets/logo.png";
@@ -6,7 +8,23 @@ import "./InfoPage.css";
 import { fetchPokemon } from "../../utils/PokeApi";
 
 function InfoPage() {
-  const pokeInfo = Header();
+  const [loading, setLoading] = useState([]);
+  const [pokemonName, setPokemonName] = useState();
+  const [pokeInfo, setPokeInfo] = useState({
+    img: "",
+    name: "",
+    type: "",
+    id: "",
+    hp: "",
+    attack: "",
+    defense: "",
+    spatk: "",
+    spdef: "",
+    speed: "",
+    overall: "",
+  });
+
+  // const pokeInfo = Header().pokeInfo;
 
   const getPokemon = async (query) => {
     const res = await fetchPokemon(query);
@@ -18,7 +36,7 @@ function InfoPage() {
       <Header getPokemon={getPokemon} />
       <div className="info">
         <div className="card">
-          <img className="card__image" src={logo} />
+          <img className="card__image" src="" />
           <div className="card__info">
             <div className="card__info_title">
               <h2>Name</h2>
