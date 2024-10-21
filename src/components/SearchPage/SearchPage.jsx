@@ -4,7 +4,7 @@ import { useState } from "react";
 // import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
 import logo from "../../assets/logo.png";
-import "./InfoPage.css";
+import "./SearchPage.css";
 import { fetchPokemon } from "../../utils/PokeApi";
 
 function InfoPage() {
@@ -47,7 +47,9 @@ function InfoPage() {
             </div>
             <div className="card__info_title">
               <h2>Type</h2>
-              <div id="pokeType"></div>
+              <div className="card__info_type" id="pokeTypeHolder">
+                <div id="pokeType"></div>
+              </div>
             </div>
             <div className="card__info_title">
               <h2>Id</h2>
