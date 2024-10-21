@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import InfoPage from "../InfoPage/InfoPage";
+import InfoPage from "../SearchPage/SearchPage";
 import "./TeamContent.css";
 import logo from "../../assets/logo.png";
 
