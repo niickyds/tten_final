@@ -59,3 +59,18 @@
 .landing__button:hover {
   background: #0255e5;
 }
+
+@media screen and (max-width: 320px) {
+  .landing {
+    gap: 40px;
+  }
+
+  .landing__info {
+    gap: 0;
+  }
+
+  .landing__button {
+    height: 10vh;
+    width: 12vh;
+  }
+}

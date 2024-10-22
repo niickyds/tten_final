@@ -5,9 +5,15 @@ function Footer() {
   return (
     <div className="footer">
       <div className="footer__content">
-        <Link to="/">Home</Link>
-        <Link to="/info">Search</Link>
-        <Link to="/about">About</Link>
+        <Link to="/" className="footer__button">
+          Home
+        </Link>
+        <Link to="/info" className="footer__button">
+          Search
+        </Link>
+        <Link to="/about" className="footer__button">
+          About
+        </Link>
       </div>
     </div>
   );

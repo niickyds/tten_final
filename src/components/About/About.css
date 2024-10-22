@@ -21,3 +21,9 @@
 .about__title {
   margin-top: 8px;
 }
+
+@media screen and (max-width: 320px) {
+  .about {
+    margin: 16px;
+  }
+}
