@@ -75,7 +75,6 @@
   display: flex;
   padding-top: 50px;
   justify-content: center;
-  /* background-color: aqua; */
   height: 50vh;
 }
 
@@ -87,10 +86,6 @@
   border-radius: 50px;
   margin: 24px;
 }
-
-/* .card__image {
-  width: 30%;
-} */
 
 .card__info {
   display: flex;
@@ -111,7 +106,6 @@
 .card__stats {
   display: flex;
   flex-wrap: wrap;
-  /* flex-direction: row; */
   gap: 15px;
 }
 

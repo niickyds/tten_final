@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-import { useState } from "react";
 import React from "react";
 
 import Footer from "../Footer/Footer";
@@ -8,9 +7,6 @@ import "./SearchPage.css";
 import { fetchPokemon } from "../../utils/PokeApi";
 
 function InfoPage() {
-  const [loading, setLoading] = useState(false);
-  const [pokeInfo, setPokeInfo] = useState();
-
   function handleEnter(event) {
     if (event.key === "Enter" || event.keyCode === 13) {
       event.preventDefault();
@@ -23,7 +19,7 @@ function InfoPage() {
       <header className="header">
         <div className="header__logo">
           <Link to="/" className="header__button">
-            <img className="header__logo-image" src={logo} />
+            <img className="header__logo-image" src={logo} alt="logo" />
           </Link>
           <h1 className="header__logo_text">Search for a Pokemon!</h1>
         </div>

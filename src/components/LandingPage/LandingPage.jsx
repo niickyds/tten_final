@@ -7,7 +7,7 @@ function LandingPage() {
     <div className="landing">
       <div className="landing__info">
         <h3 className="landing__title">Pokemon Final</h3>
-        <img className="landing__logo" src={logo} />
+        <img className="landing__logo" src={logo} alt="logo" />
         <div className="landing__directions">
           Click one of the buttons below
         </div>

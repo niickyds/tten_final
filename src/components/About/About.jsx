@@ -16,7 +16,6 @@ function AboutPage() {
             repertoire and push the boundaries of innovation. Let's connect and
             explore opportunities to collaborate on exciting ventures together!
           </p>
-          {/* <br /> */}
           Link to my github:
           <a
             href="https://github.com/niickyds?tab=repositories"
