@@ -1,8 +1,8 @@
 import { Link } from "react-router-dom";
-import "./TeamContent.css";
+import "./LandingPage.css";
 import logo from "../../assets/logo.png";
 
-function TeamContent() {
+function LandingPage() {
   return (
     <div className="landing">
       <div className="landing__info">
@@ -24,4 +24,4 @@ function TeamContent() {
   );
 }
 
-export default TeamContent;
+export default LandingPage;

@@ -1,5 +1,5 @@
 import { Route, Routes } from "react-router-dom";
-import TeamContent from "../TeamContent/TeamContent";
+import LandingPage from "../LandingPage/LandingPage";
 import SearchPage from "../SearchPage/SearchPage";
 import AboutPage from "../About/About";
 // import Preloader from "../Preloader/Preloader";
@@ -11,7 +11,7 @@ function App() {
       <div className="page">
         {/* <Preloader /> */}
         <Routes>
-          <Route path="/" element={<TeamContent />} />
+          <Route path="/" element={<LandingPage />} />
           <Route path="/info" element={<SearchPage />} />
           <Route path="/about" element={<AboutPage />} />
         </Routes>

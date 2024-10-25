@@ -17,7 +17,7 @@ function AboutPage() {
             explore opportunities to collaborate on exciting ventures together!
           </p>
           {/* <br /> */}
-          Link to my github:{" "}
+          Link to my github:
           <a
             href="https://github.com/niickyds?tab=repositories"
             className="about__link"
