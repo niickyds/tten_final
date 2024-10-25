@@ -22,8 +22,18 @@
   margin-top: 8px;
 }
 
+.about__link {
+  color: #000000;
+  text-decoration: none;
+}
+
 @media screen and (max-width: 320px) {
   .about {
     margin: 16px;
+  }
+
+  .about__holder {
+    margin: 4px;
+    padding: 26px;
   }
 }
