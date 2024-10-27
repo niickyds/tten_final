@@ -1,8 +1,8 @@
 # tten_final
 
-Welcome to my site where you can go to lookup whatever pokemon you want.
+Welcome to my website where you can go to lookup whatever pokemon you want. This site will display information from their name to their stats.
 
-Technologies: To make this site I used a combination of vite and react to create to framework. Where I then implemented various frontend skills such as advanced html and css, javascript, event handling, and more.
+To make this site I used a combination of vite and react to create to framework. Where I then implemented various frontend skills such as advanced html and css, javascript, event handling, and more.
 
 Getting Started:
 
@@ -17,5 +17,8 @@ npm install
 
 Start the project:
 npm run dev
+
+Deploy the project:
+npm run deploy (npm run build should run right before it)
 
 gh-pages: https://niickyds.github.io/tten_final/
