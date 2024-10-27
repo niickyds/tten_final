@@ -1,8 +1,21 @@
-# React + Vite
+# tten_final
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to my site where you can go to lookup whatever pokemon you want.
 
-Currently, two official plugins are available:
+Technologies: To make this site I used a combination of vite and react to create to framework. Where I then implemented various frontend skills such as advanced html and css, javascript, event handling, and more.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Getting Started:
+
+Clone the repository:
+git clone https://github.com/yourusername/yournameforproject.git
+
+Navigate to the project directory:
+cd yournameforproject
+
+Install dependencies:
+npm install
+
+Start the project:
+npm run dev
+
+gh-pages: https://niickyds.github.io/tten_final/
