@@ -7,5 +7,5 @@ export default defineConfig({
   server: {
     port: 3001,
   },
-  // root: "./src/Main/main.jsx",
+  root: "./src/Main/main.jsx",
 });
