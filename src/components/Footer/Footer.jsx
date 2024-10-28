@@ -3,7 +3,7 @@ import "./Footer.css";
 
 function Footer() {
   return (
-    <div className="footer">
+    <footer className="footer">
       <div className="footer__content">
         <Link to="/" className="footer__button">
           Home
@@ -15,7 +15,7 @@ function Footer() {
           About
         </Link>
       </div>
-    </div>
+    </footer>
   );
 }
 

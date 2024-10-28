@@ -7,16 +7,14 @@ import "./App.css";
 
 function App() {
   return (
-    <>
-      <div className="page">
-        {/* <Preloader /> */}
-        <Routes>
-          <Route path="/" element={<LandingPage />} />
-          <Route path="/info" element={<SearchPage />} />
-          <Route path="/about" element={<AboutPage />} />
-        </Routes>
-      </div>
-    </>
+    <div className="page">
+      {/* <Preloader /> */}
+      <Routes>
+        <Route path="/" element={<LandingPage />} />
+        <Route path="/info" element={<SearchPage />} />
+        <Route path="/about" element={<AboutPage />} />
+      </Routes>
+    </div>
   );
 }
 
