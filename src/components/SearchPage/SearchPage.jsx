@@ -11,12 +11,16 @@ function InfoPage() {
   const [loading, setLoading] = useState(false);
 
   const getPokemon = async (query) => {
-    setLoading(true);
-    const response = await fetchPokemon(query);
-    const results = await response.json();
-    console.log(results);
-    setPokeInfo(results);
-    setLoading(false);
+    try {
+      setLoading(true);
+      const response = await fetchPokemon(query);
+      const results = await response.json();
+      console.log(results);
+      setPokeInfo(results);
+      setLoading(false);
+    } catch (err) {
+      console.error(err);
+    }
   };
 
   return (
