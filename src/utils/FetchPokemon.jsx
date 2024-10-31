@@ -5,9 +5,5 @@ const query = {
 };
 
 export async function fetchPokemon(pokemon) {
-  try {
-    return fetch(`${baseUrl}/${query.pokemon}/${pokemon}`);
-  } catch (err) {
-    console.error(err);
-  }
+  return fetch(`${baseUrl}/${query.pokemon}/${pokemon}`);
 }

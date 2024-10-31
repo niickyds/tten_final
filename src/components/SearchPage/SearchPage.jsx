@@ -14,12 +14,15 @@ function InfoPage() {
     try {
       setLoading(true);
       const response = await fetchPokemon(query);
+      if (!response.ok) {
+        throw new Error(`Error ${response.status}`);
+      }
       const results = await response.json();
-      console.log(results);
       setPokeInfo(results);
-      setLoading(false);
     } catch (err) {
-      console.error(err);
+      console.error(err); // add error popups etc.
+    } finally {
+      setLoading(false);
     }
   };
 

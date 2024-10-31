@@ -29,7 +29,7 @@ function SearchHeader(props) {
         <form className="header__form" onSubmit={handleSubmit}>
           <input
             type="text"
-            value={this}
+            value={search}
             className="header__search-input"
             placeholder="Charizard"
             onChange={(e) => setSearch(e.target.value)}
